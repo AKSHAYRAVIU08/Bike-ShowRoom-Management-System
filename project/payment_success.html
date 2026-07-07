@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f8f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-box {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #ccc;
+        }
+
+        .check {
+            font-size: 60px;
+            color: green;
+        }
+
+        button {
+            background: green;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="success-box">
+
+    <div class="check">✓</div>
+
+    <h2>Payment Successful</h2>
+
+    <p>Your payment has been completed successfully.</p>
+
+    <p>
+        <b>Order ID:</b> {{order_id}}
+    </p>
+
+    <p>
+        <b>Payment ID:</b> {{rapayment_id}}
+    </p>
+
+    <p>
+        <b>Amount:</b> ₹{{amount}}
+    </p>
+
+    <p>
+        <b>Signature:</b> {{razorpay_signature}}
+    </p>
+
+    <a href="/five">
+        <button>Continue Purchase</button>
+    </a>
+
+</div>
+
+
+</body>
+</html>
